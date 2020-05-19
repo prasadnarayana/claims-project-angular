@@ -26,7 +26,7 @@ export class ActivityHistoryComponent implements OnInit {
   getHistory() {
     this._userService.getActionHistory(this._data.id).subscribe(
       actions => {
-        console.log(actions);
+        // console.log(actions);
         this.dataSource = actions;
       },
       error => {

@@ -23,6 +23,18 @@ export class AuthService {
     return this._http.post<{ token: string }>(this.baseURL + "signin", userCredentials);
   }
 
+  requestReset(email): Observable<any> {
+    return this._http.post(this.baseURL + "request-reset-password", { email });
+  }
+
+  newPassword(data): Observable<any> {
+    return this._http.post(this.baseURL + "new-password", data);
+  }
+
+  validPasswordToken(resetToken): Observable<any> {
+    return this._http.post(this.baseURL + "valid-password-token", { resetToken });
+  }
+
   logout() {
     localStorage.removeItem('access_token');
   }

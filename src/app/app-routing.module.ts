@@ -10,6 +10,8 @@ import { AdminHomeComponent } from './admin/admin-home/admin-home.component';
 import { ClaimsComponent } from './admin/claims/claims.component';
 import { AddUserComponent } from './admin/add-user/add-user.component';
 import { RemoveUserComponent } from './admin/remove-user/remove-user.component';
+import { RequestResetPasswordComponent } from './user/request-reset-password/request-reset-password.component';
+import { ResponseResetPasswordComponent } from './user/response-reset-password/response-reset-password.component';
 
 const routes: Routes = [
   {
@@ -19,6 +21,14 @@ const routes: Routes = [
   {
     path: "login",
     component: LoginComponent
+  },
+  {
+    path: "request-reset-password",
+    component: RequestResetPasswordComponent
+  },
+  {
+    path: "response-reset-password/:token",
+    component: ResponseResetPasswordComponent
   },
   {
     path: "user",

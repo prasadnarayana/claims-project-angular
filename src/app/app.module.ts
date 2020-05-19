@@ -50,6 +50,8 @@ import { AddUserComponent } from './admin/add-user/add-user.component';
 import { RemoveUserComponent } from './admin/remove-user/remove-user.component';
 import { DeleteConfirmPopupComponent } from './user/delete-confirm-popup/delete-confirm-popup.component';
 import { ActivityHistoryComponent } from './user/activity-history/activity-history.component';
+import { RequestResetPasswordComponent } from './user/request-reset-password/request-reset-password.component';
+import { ResponseResetPasswordComponent } from './user/response-reset-password/response-reset-password.component';
 
 export function tokenGetter() {
   return localStorage.getItem('access_token');
@@ -71,7 +73,9 @@ export function tokenGetter() {
     AddUserComponent,
     RemoveUserComponent,
     DeleteConfirmPopupComponent,
-    ActivityHistoryComponent
+    ActivityHistoryComponent,
+    RequestResetPasswordComponent,
+    ResponseResetPasswordComponent
   ],
   entryComponents: [
     ClaimsFormComponent,

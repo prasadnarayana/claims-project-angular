@@ -10,3 +10,10 @@
 }
 
 mat-radio-button { color: rgba(0,0,0,.54); }
+
+.links {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.links a { font-style: italic; }

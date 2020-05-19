@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
           if (userCredentials.role === "user")
             this._router.navigate(["user"]);
           else
-          this._router.navigate(["admin"]);
+            this._router.navigate(["admin"]);
         } else {
           this._snackBar.open(res.msg, "", { duration: 3000 });
         }
